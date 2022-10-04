@@ -1,0 +1,10 @@
+US Dollar	1087
+Euro	1084
+British Pound	1245
+Indian Rupee	13.3
+Australian Dollar	703
+Canadian Dollar	804
+Singapore Dollar	763
+Swiss Franc	1109
+Malaysian Ringgit	234
+Japanese Yen	7.5
