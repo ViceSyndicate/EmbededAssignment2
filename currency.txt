@@ -1,10 +1,20 @@
-US Dollar	1087
-Euro	1084
-British Pound	1245
-Indian Rupee	13.3
-Australian Dollar	703
-Canadian Dollar	804
-Singapore Dollar	763
-Swiss Franc	1109
-Malaysian Ringgit	234
-Japanese Yen	7.5
+USD	1087
+EUR	1084
+GPD	1245
+INR	13.3
+AUD	703
+CAD 804
+SGD      763
+CHF    1109
+MYR       234
+JPY   7.5
+MXN	54
+NPR 8.3
+NZD	626
+NK	104
+OMR	2853
+PKR	4.9
+PHP	18
+PLN	224
+QAR	301
+RON	219
