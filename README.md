@@ -1,2 +1,2 @@
-Victor S
-Gösta 
+Victor Skårerverket
+Gösta Carlstrand
