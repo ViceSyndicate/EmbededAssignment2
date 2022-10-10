@@ -1,42 +1,39 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 const int G_ARR_SIZE = 100;
 
 struct Currency {
-    const char * currencyName;
+    char * currencyName;
     long int currencyValue;
 };
 
 
-struct currencyName {
-    char currencyNameString[3];
-};
-
 struct Currency structArr[G_ARR_SIZE];
-struct currencyName stringArr[G_ARR_SIZE];
+
+char stringArr[100][4];
+
 void fileHandler () {
     int index = 0;
 
 
     FILE *fp;
-    char stringBuff[10];
-    char intBuff[255];
+
+    char buff[255];
     fp = fopen("..//currency.txt", "r");
-    while(fscanf(fp, "%s", stringBuff)!=EOF){
-
-        stringArr[index].currencyNameString[0] = stringBuff[0];
-        stringArr[index].currencyNameString[1] = stringBuff[1];
-        stringArr[index].currencyNameString[2] = stringBuff[2];
+    while(fscanf(fp, "%s", buff)!=EOF){
 
 
-        structArr[index].currencyName = stringArr[index].currencyNameString;
+        strncpy(stringArr[index], buff, 3);
+        structArr[index].currencyName = stringArr[index];
 
-        fscanf(fp, "%s", intBuff);
+
+        fscanf(fp, "%s", buff);
 
         char *ptr;
         long result;
-        result = strtol(intBuff, &ptr, 10);
+        result = strtol(buff, &ptr, 10);
         structArr[index].currencyValue = result;
 
         index++;
@@ -55,7 +52,10 @@ void printTable () {
 }
 
 
+
+
 int main() {
+
     fileHandler();
     printTable();
     return 0;
