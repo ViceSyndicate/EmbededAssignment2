@@ -1,3 +1,2 @@
-Victor Skårerverket Härström, 
-
+Victor Härström
 Gösta Carlstrand
