@@ -4,7 +4,7 @@
 const int G_ARR_SIZE = 100;
 
 struct Currency {
-    const char * currencyName[4];
+    char * currencyName[4];
     long int currencyValue;
 };
 
@@ -15,7 +15,7 @@ void fileHandler () {
     FILE *fp;
     char stringBuff[255];
     char intBuff[255];
-    fp = fopen("..//currencyLong.txt", "r");
+    fp = fopen("..//currencyBadFormat.txt", "r");
 
     while(fscanf(fp, "%s", stringBuff)!=EOF){
         struct Currency currency;
@@ -26,7 +26,7 @@ void fileHandler () {
         currency.currencyName[3] = '\0';
 
         fscanf(fp, "%s", intBuff);
-
+        
         char *ptr;
         long result;
         result = strtol(intBuff, &ptr, 10);

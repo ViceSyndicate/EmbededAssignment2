@@ -3,9 +3,10 @@ INR 13.3
 AUD                    703
 CAD 804
 
+
 SGD      763
-CHF                         1109
-MYR       234
+      CHF                         1109
+MYR          234
 JPY
    7.5
 MXN    54
