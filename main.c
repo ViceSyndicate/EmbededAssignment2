@@ -25,7 +25,7 @@ void fileHandler () {
     while(fscanf(fp, "%s", buff)!=EOF){
 
 
-        strncpy(stringArr[index], buff, 3);
+        strncpy(stringArr[index], buff, 4);
         structArr[index].currencyName = stringArr[index];
 
 
